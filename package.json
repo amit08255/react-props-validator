@@ -1,0 +1,46 @@
+{
+  "name": "props-validation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "test": "eslint ./src/**/*.{js,jsx}",
+    "fix": "eslint ./src/**/*.{js,jsx} --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirillgenets/props-validation.git"
+  },
+  "author": "Kiryl Henets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kirillgenets/props-validation/issues"
+  },
+  "homepage": "https://github.com/kirillgenets/props-validation#readme",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "classnames": "^2.2.6",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.1",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.17.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

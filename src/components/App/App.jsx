@@ -4,8 +4,9 @@ import Validator from '../Validator';
 const App = () => {
   return (
     <Validator 
-      x="53"
-      y="2"
+      x={1}
+      y={2}
+      coords={[0, "1"]}
     />
   )
 }

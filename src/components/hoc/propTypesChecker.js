@@ -1,19 +1,24 @@
 import React from 'react';
-
-const SECRET = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+import SECRET from '../../constants/secret';
+import PropTypesError from '../PropTypesError';
 
 const propTypesChecker = (Component) => (props) => {
   const analysis = Object.keys(Component.propTypes).map(key => {
     const validator = Component.propTypes[key];
-    return validator(props, key, '', '', null, SECRET);
+
+    return validator(props, key, Component.name, '', null, SECRET);
   });
 
-  const arePropsValid = analysis.every(prop => prop === null);
+  const errors = analysis.filter((error) => error !== null);
+  const arePropsValid = errors.length === 0;
 
   return (
     arePropsValid ?
       <Component {...props} /> :
-      <div>Error!</div>
+      <PropTypesError
+        icon={props.icon}
+        errors={errors}
+      />
   )
 }
 

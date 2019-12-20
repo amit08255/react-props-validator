@@ -5,34 +5,35 @@ import SadIcon from './sad.svg';
 
 const PropTypesError = (props) => {
   const handleIconClick = () => {
-    props.errors.map(error => {
+    props.errors.forEach((error) => {
       console.error(error.message);
     });
-  }
+  };
 
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <img 
+        <img
           className={styles.icon}
           onClick={handleIconClick}
-          src={props.icon} 
+          src={props.icon}
           alt="Diagram icon"
         />
         <p className={styles.description}>
-          Sorry, but we can't show the diagram because a configuration error occurred.
+          Sorry, but we can&apos;t show the diagram because a configuration error occurred.
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 PropTypesError.propTypes = {
   icon: PropTypes.string,
-}
+  errors: PropTypes.arrayOf(PropTypes.object),
+};
 
 PropTypesError.defaultProps = {
-  icon: SadIcon
-}
+  icon: SadIcon,
+};
 
 export default PropTypesError;

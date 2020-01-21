@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import propTypesChecker from '../hoc/propTypesChecker';
 
-const Validator = () => (
+const Validator = () => {
+  window.asd = PropTypes.shape({a: PropTypes.number.isRequired});
+
+  return (
     <div>
       Yahooooo!
-    </div>
-);
+    </div>)
+};
 
 Validator.propTypes = {
   x: PropTypes.number.isRequired,
@@ -14,4 +17,4 @@ Validator.propTypes = {
   coords: PropTypes.arrayOf(PropTypes.number),
 };
 
-export default propTypesChecker(Validator);
+export default Validator;

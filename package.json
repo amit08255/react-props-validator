@@ -1,6 +1,6 @@
 {
   "name": "react-props-validator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "author": "Kiryl Henets",
   "license": "ISC",
+  "keywords": ["react", "prop-types", "prop-types-validation", "validation", "error-boundary"],
   "bugs": {
     "url": "https://github.com/kirillgenets/react-props-validator/issues"
   },

@@ -30,5 +30,5 @@ This errorBoundary component can receive ```errors``` prop which is the array of
 
 ## Examples
 
-Example of ErrorBoundary you can find there: [PropTypesError](https://github.com/kirillgenets/react-props-validator/tree/master/src/components/PropTypesError/PropTypesError.jsx);
-Example of usage the HOC you can find there: [PropTypesError](https://github.com/kirillgenets/react-props-validator/tree/master/src/components/Example/Example.jsx);
+Example of ErrorBoundary you can find there: [PropTypesError](https://github.com/kirillgenets/react-props-validator/tree/master/src/components/PropTypesError/PropTypesError.jsx)<br/>
+Example of usage the HOC you can find there: [PropTypesError](https://github.com/kirillgenets/react-props-validator/tree/master/src/components/Example/Example.jsx).

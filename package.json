@@ -1,6 +1,6 @@
 {
-  "name": "props-validation",
-  "version": "1.0.0",
+  "name": "react-props-validator",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kirillgenets/props-validation.git"
+    "url": "git+https://github.com/kirillgenets/react-props-validator.git"
   },
   "author": "Kiryl Henets",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kirillgenets/props-validation/issues"
+    "url": "https://github.com/kirillgenets/react-props-validator/issues"
   },
-  "homepage": "https://github.com/kirillgenets/props-validation#readme",
+  "homepage": "https://github.com/kirillgenets/react-props-validator#readme",
   "dependencies": {
     "classnames": "^2.2.6",
     "prop-types": "^15.7.2",

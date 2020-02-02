@@ -8,11 +8,11 @@ When the error in prop-types occured user will see the PropTypesError component.
 
 With NPM:
 ```
-npm i props-validation --save
+npm i react-props-validator --save
 ```
 Or with Yarn:
 ```
-yarn add props-validation --save
+yarn add react-props-validator --save
 ```
 
 ## Usage

@@ -25,8 +25,8 @@ import propTypesChecker from '../hoc/propTypesChecker';
 export default propTypesChecker(<ComponentName>);
 ```
 
-You must set prop ```errorBoundary``` to the component you want to check - it must be a Component/Node that will render instead of the component with wrong props.
-This errorBoundary component can receive ```errors``` prop which is the object of PropTypesError with ```message``` value - this is the message of the PropTypesError.
+You must set prop ```errorBoundary``` to the component you want to check - it must be a Component/Node that will render instead of the component with wrong props.<br/>
+This errorBoundary component can receive ```errors``` prop which is the array of objects of PropTypesError with ```message``` value - this is the message of the PropTypesError.
 
 ## Examples
 

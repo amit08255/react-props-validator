@@ -12,6 +12,7 @@ Example.propTypes = {
     string: PropTypes.string,
     oneOf: PropTypes.oneOf(['lol', 'kek']).isRequired,
   }),
+  errorBoundary: PropTypes.node,
 };
 
 export default propTypesChecker(Example);

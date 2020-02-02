@@ -7,7 +7,7 @@ const propTypesChecker = (Component) => (props) => {
     return validator(props, key, Component.name, '', null, SECRET);
   });
 
-  const errors = analysis.filter((error) => error !== null);
+  const errors = analysis.filter((error) => error !== null).map((error) => error.message);
   const arePropsValid = errors.length === 0;
   const ErrorBoundary = props.errorBoundary;
 

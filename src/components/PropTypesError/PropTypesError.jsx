@@ -6,7 +6,7 @@ import SadIcon from './sad.svg';
 const PropTypesError = (props) => {
   const handleIconClick = () => {
     props.errors.forEach((error) => {
-      console.error(error.message);
+      console.error(error);
     });
   };
 
@@ -33,7 +33,7 @@ PropTypesError.defaultProps = {
 
 PropTypesError.propTypes = {
   icon: PropTypes.string,
-  errors: PropTypes.arrayOf(PropTypes.object),
+  errors: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default PropTypesError;

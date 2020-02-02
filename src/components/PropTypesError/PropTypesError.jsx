@@ -20,20 +20,20 @@ const PropTypesError = (props) => {
           alt="Diagram icon"
         />
         <p className={styles.description}>
-          Sorry, but we can&apos;t show the diagram because a configuration error occurred.
+          Sorry, but we can&apos;t show the component because a configuration error occurred.
         </p>
       </div>
     </div>
   );
 };
 
+PropTypesError.defaultProps = {
+  icon: SadIcon,
+};
+
 PropTypesError.propTypes = {
   icon: PropTypes.string,
   errors: PropTypes.arrayOf(PropTypes.object),
-};
-
-PropTypesError.defaultProps = {
-  icon: SadIcon,
 };
 
 export default PropTypesError;

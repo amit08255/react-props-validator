@@ -1,12 +1,15 @@
 import React from 'react';
-import Validator from '../Validator';
+import Example from '../Example';
+import PropTypesError from '../PropTypesError';
 
 const App = () => (
-    <Validator
-      x={1}
-      y={2}
-      coords={[0, '1']}
-    />
+  <Example
+    requiredNumber={1}
+    justNumber={2}
+    arrayOfNumbers={[0, 1]}
+    shape={{}} // Wrong prop here!
+    errorBoundary={PropTypesError}
+  />
 );
 
 export default App;
